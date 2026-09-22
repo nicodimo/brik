@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anna Maria Viggiano — Galleria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,440;0,9..144,560;1,9..144,440&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<nav id="siteNav" class="fade">
+  <span class="nav-name">Anna Maria Viggiano</span>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#biografia">Biografia</a>
+  </div>
+</nav>
+
+<div class="cover" id="cover">
+  <div class="eyebrow">Quindici opere, una parete sola</div>
+  <button class="cover-btn" id="coverBtn">Esplora la galleria<span class="underline"></span></button>
+  <div class="count">10 lavori su carta &middot; acquerello, china, acquaforte</div>
+</div>
+
+<div class="wrap gallery-head">
+  <div class="kicker">Galleria</div>
+  <h1>Opere scelte, in ordine sparso come su una parete di studio.</h1>
+  <p>Ogni immagine si apre al tocco: titolo, tecnica e una breve nota accompagnano il lavoro.</p>
+</div>
+
+<div class="wrap grid" id="grid"></div>
+
+<footer class="wrap">
+  <span>Anna Maria Viggiano</span>
+  <span>Galleria &middot; opere su carta</span>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" id="lbClose">chiudi &times;</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Opera precedente">&#8249;</button>
+  <button class="lb-next" id="lbNext" aria-label="Opera successiva">&#8250;</button>
+  <div class="lb-inner">
+    <div class="lb-figure"><img id="lbImg" src="" alt=""></div>
+    <div class="lb-text">
+      <h2 id="lbTitle"></h2>
+      <div class="medium" id="lbMedium"></div>
+      <div class="note" id="lbNote"></div>
+      <div class="lb-index" id="lbIndex"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/gallery.js"></script>
+</body>
+</html>
